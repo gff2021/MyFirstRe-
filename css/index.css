@@ -1,0 +1,222 @@
+body {
+    min-width: 1500px;
+}
+
+/* 引入字体 */
+@font-face {
+    font-family: 'myfont';
+    src: url(../fonts/STHUPO.TTF);
+}
+@font-face {
+    font-family: "iconfont";
+    src: url(../fonts/iconfont.ttf);
+}
+
+/* 版心 */
+.main {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ----------------头部---------------- */
+.header {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: skyblue;
+}
+.logo a {
+    display: inline-block;
+    font-family: 'myfont';
+    font-size: 30px;
+    color: #fff;
+    line-height: 70px;
+}
+
+/* ----------------内容---------------- */
+.content {
+    margin-top: 70px;
+    /* padding: 70px 0; */
+    overflow: hidden;
+}
+.tab-list {
+    float: left;
+    width: 15%;
+    text-align: center;
+    background-color: powderblue;
+}
+.tab-list h2 {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.tab-list .li-bgc {
+    background-color: paleturquoise;
+}
+.tab-list .li-shadow {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5) inset;
+}
+.tab-list li a {
+    display: block;
+    color: #000;
+    font-size: 18px;
+    line-height: 60px;
+}
+.tab-cons {
+    float: right;
+    width: 85%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.tab-cons section {
+    display: none;
+}
+
+/* 轮播图模块 */
+.tab-cons .banner {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.focus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 800px;
+}
+
+.focus li {
+    float: left;
+    height: 100%;
+}
+
+.focus li img {
+    width: 100%;
+    height: 100%;
+}
+
+.circles {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.circles li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 0 5px;
+}
+
+.circles .active {
+    background-color: orange;
+}
+
+.banner a[class$=arrow] {
+    display: none;
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner .left-arrow {
+    background: url(../images/arrow-left.png) no-repeat center center;
+    left: 20px;
+}
+
+.banner .right-arrow {
+    background: url(../images/arrow-right.png) no-repeat center center;
+    right: 20px;
+}
+
+/* 菜谱模块 */
+.menu {
+    width: 100%;
+    height: 800px;
+    border: 1px solid #ddd;
+    overflow: auto;
+}
+
+.menu li {
+    float: left;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.menu li img {
+    display: block;
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.menu li h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* 新闻模块 */
+.news table {
+    width: 100%;
+}
+.news thead tr {
+    height: 50px;
+}
+.news th:nth-of-type(1) {
+    width: 15%;
+}
+.news th:nth-of-type(2) {
+    width: 40%;
+}
+.news th:nth-of-type(3) {
+    width: 30%;
+}
+.news th:nth-of-type(4) {
+    width: 15%;
+}
+.news tbody tr {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.news tbody tr td:nth-of-type(2) {
+    text-align: left;
+}
+.news tbody a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+/* 老师模块 */
+.teachers ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.teachers ul li {
+    flex: 1 1 auto;
+}
+.teachers ul li span {
+    color: orange;
+}

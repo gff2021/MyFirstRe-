@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/funtions.js"></script>
+</head>
+
+<body>
+    <script>
+        var str = document.cookie;
+        var arr = str.split('=');
+        var newsId = arr[1];
+        postmsg = 'username=gff&userpwd=12345678&userclass=67&type=2&m=' + newsId;
+        getData('post', 'http://www.qhdlink-student.top/student/newsinfo.php', true, postmsg, fn);
+        function fn(data) {
+            datajson = eval('(' + data + ')');
+            document.body.innerHTML = datajson[0].info_news;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/initial.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script type="text/javascript" src="../js/funtions.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+</head>
+
+<body>
+    <!-- ---------------头部--------------- -->
+    <div class="header">
+        <div class="main">
+            <div class="logo">
+                <a href="javascript:;" class="logo-font">非同凡响</a>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------内容--------------- -->
+    <div class="bg-box" id="bgImg">
+        <div class="content">
+            <h2>登录</h2>
+            <form action="http://www.qhdlink-student.top/student/login.php" method="POST" class="form-login">
+                <p>
+                    <label for="uname">用户名：</label><input type="text" name="username" id="uname" class="txt-name"
+                        placeholder="请输入用户名"><span class="warn">*3位或4位小写英文字母</span>
+                </p>
+                <p>
+                    <label for="upwd">登录密码：</label><input type="text" name="userpwd" id="upwd" class="txt-pwd"
+                        placeholder="请输入密码"><span class="warn">*6-16位字母数字组合</span>
+                </p>
+                <p>
+                    <label for="uclass">班级：</label><input type="text" name="userclass" id="uclass" class="txt-class"
+                        placeholder="请输入班级"><span class="warn">*班级号，2位或3位数字</span>
+                </p>
+                <p>
+                    <input type="hidden" name="type" value="2" id="typeid">
+                    <input type="button" value="登录" class="submit" id="submitBtn">
+                    <input type="button" value="重置" class="reset" id="resetBtn">
+                </p>
+            </form>
+        </div>
+    </div>
+    <!-- ---------------尾部--------------- -->
+    <div class="footer"></div>
+</body>
+
+</html>
